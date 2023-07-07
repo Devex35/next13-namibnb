@@ -47,26 +47,26 @@ export const categories = [
     icon: TbPool,
     description: 'This is property has a beautiful pool!'
   },
-  {
-    label: 'Islands',
-    icon: GiIsland,
-    description: 'This property is on an island!'
-  },
+  // {
+  //   label: 'Islands',
+  //   icon: GiIsland,
+  //   description: 'This property is on an island!'
+  // },
   {
     label: 'Lake',
     icon: GiBoatFishing,
     description: 'This property is near a lake!'
   },
-  {
-    label: 'Skiing',
-    icon: FaSkiing,
-    description: 'This property has skiing activies!'
-  },
-  {
-    label: 'Castles',
-    icon: GiCastle,
-    description: 'This property is an ancient castle!'
-  },
+  // {
+  //   label: 'Skiing',
+  //   icon: FaSkiing,
+  //   description: 'This property has skiing activies!'
+  // },
+  // {
+  //   label: 'Castles',
+  //   icon: GiCastle,
+  //   description: 'This property is an ancient castle!'
+  // },
   {
     label: 'Caves',
     icon: GiCaveEntrance,
@@ -77,11 +77,11 @@ export const categories = [
     icon: GiForestCamp,
     description: 'This property offers camping activities!'
   },
-  {
-    label: 'Arctic',
-    icon: BsSnow,
-    description: 'This property is in arctic environment!'
-  },
+  // {
+  //   label: 'Arctic',
+  //   icon: BsSnow,
+  //   description: 'This property is in arctic environment!'
+  // },
   {
     label: 'Desert',
     icon: GiCactus,
