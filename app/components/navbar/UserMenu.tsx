@@ -131,6 +131,10 @@ const UserMenu: React.FC<UserMenuProps> = ({
                   label="Logout" 
                   onClick={() => signOut()}
                 />
+                <MenuItem 
+                  label="Ad" 
+                  onClick={() => router.push("/admin")}
+                />
               </>
             ) : (
               <>
