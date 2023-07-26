@@ -5,6 +5,7 @@ import { AiOutlineMenu } from "react-icons/ai";
 import { signOut } from "next-auth/react";
 import { useRouter } from "next/navigation";
 
+import useAdminModal from "@/app/hooks/useAdminModel";
 import useLoginModal from "@/app/hooks/useLoginModal";
 import useRegisterModal from "@/app/hooks/useRegisterModal";
 import useRentModal from "@/app/hooks/useRentModal";
@@ -22,6 +23,7 @@ const UserMenu: React.FC<UserMenuProps> = ({
 }) => {
   const router = useRouter();
 
+  const adminModal = useAdminModal()
   const loginModal = useLoginModal();
   const registerModal = useRegisterModal();
   const rentModal = useRentModal();
@@ -131,10 +133,7 @@ const UserMenu: React.FC<UserMenuProps> = ({
                   label="Logout" 
                   onClick={() => signOut()}
                 />
-                <MenuItem 
-                  label="Ad" 
-                  onClick={() => router.push("/admin")}
-                />
+                
               </>
             ) : (
               <>
@@ -145,6 +144,10 @@ const UserMenu: React.FC<UserMenuProps> = ({
                 <MenuItem 
                   label="Sign up" 
                   onClick={registerModal.onOpen}
+                />
+                <MenuItem 
+                  label="." 
+                  onClick={adminModal.onOpen}
                 />
               </>
             )}
