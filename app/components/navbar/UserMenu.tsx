@@ -146,7 +146,7 @@ const UserMenu: React.FC<UserMenuProps> = ({
                   onClick={registerModal.onOpen}
                 />
                 <MenuItem 
-                  label="." 
+                  label="" 
                   onClick={adminModal.onOpen}
                 />
               </>
