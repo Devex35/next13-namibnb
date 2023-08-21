@@ -11,6 +11,7 @@ import ToasterProvider from '@/app/providers/ToasterProvider';
 import './globals.css'
 import ClientOnly from './components/ClientOnly';
 import getCurrentUser from './actions/getCurrentUser';
+import AdminModal from './components/modals/AdminModel';
 
 export const metadata = {
   title: 'NamiBnb',
@@ -37,6 +38,7 @@ export default async function RootLayout({
           <RegisterModal />
           <SearchModal />
           <RentModal />
+          <AdminModal/>
           <Navbar currentUser={currentUser} />
         </ClientOnly>
         <div className="pb-20 pt-28">

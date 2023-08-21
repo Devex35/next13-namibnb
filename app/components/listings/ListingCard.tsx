@@ -15,6 +15,7 @@ import {
 import HeartButton from "../HeartButton";
 import Button from "../Button";
 import ClientOnly from "../ClientOnly";
+import { title } from "process";
 
 interface ListingCardProps {
   data: SafeListing;
@@ -108,8 +109,11 @@ const ListingCard: React.FC<ListingCardProps> = ({
             />
           </div>
         </div>
-        <div className="font-semibold text-lg">
+        {/* <div className="font-semibold text-lg">
           {location?.region}, {location?.label}
+        </div> */}
+        <div className="font-semibold text-lg">
+          {title}
         </div>
         <div className="font-light text-neutral-500">
           {reservationDate || data.category}
