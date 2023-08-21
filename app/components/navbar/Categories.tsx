@@ -6,12 +6,14 @@ import {
   GiBarn, 
   GiBoatFishing, 
   GiCactus, 
+  GiCarKey, 
   GiCastle, 
   GiCaveEntrance, 
   GiClothes, 
   GiForestCamp, 
   GiIsland,
   GiSmartphone,
+  GiWatch,
   GiWindmill
 } from 'react-icons/gi';
 import { FaSkiing } from 'react-icons/fa';
@@ -67,8 +69,13 @@ export const categories = [
   },
   {
     label: 'Cars',
-    icon: GiCarDoor,
+    icon: GiCarKey,
     description: 'Cars for sale in namibia',
+  },
+  {
+    label: 'Accesories',
+    icon: GiWatch,
+    description: 'Accesories for sale in namibia',
   },
   // {
   //   label: 'Beach',
