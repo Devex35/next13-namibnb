@@ -112,18 +112,18 @@ const ListingCard: React.FC<ListingCardProps> = ({
         {/* <div className="font-semibold text-lg">
           {location?.region}, {location?.label}
         </div> */}
-        <div className="font-semibold text-lg">
-          {title}
+        <div className="font-semibold text-lg truncate">
+          {data.title}
         </div>
         <div className="font-light text-neutral-500">
           {reservationDate || data.category}
         </div>
         <div className="flex flex-row items-center gap-1">
           <div className="font-semibold">
-            $ {price}
+            N$ {price}
           </div>
           {!reservation && (
-            <div className="font-light">night</div>
+            <div className="font-light"></div>
           )}
         </div>
         {onAction && actionLabel && (

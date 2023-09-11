@@ -14,8 +14,8 @@ import getCurrentUser from './actions/getCurrentUser';
 import AdminModal from './components/modals/AdminModel';
 
 export const metadata = {
-  title: 'NamiBnb',
-  description: 'NamiBnb',
+  title: 'NamibMarketplace',
+  description: 'NamibMarketplace',
 }
 
 const font = Nunito({ 
