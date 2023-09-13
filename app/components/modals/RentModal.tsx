@@ -131,7 +131,7 @@ const RentModal = () => {
   let bodyContent = (
     <div className="flex flex-col gap-8">
       <Heading
-        title="Which of these best describes your place?"
+        title="Which of these best describes your product?"
         subtitle="Pick a category"
       />
       <div 
@@ -163,8 +163,8 @@ const RentModal = () => {
     bodyContent = (
       <div className="flex flex-col gap-8">
         <Heading
-          title="Where is your place located?"
-          subtitle="Help guests find you!"
+          title="Where are you located?"
+          subtitle="Help customers find you!"
         />
         <CountrySelect 
           value={location} 
@@ -210,8 +210,8 @@ const RentModal = () => {
     bodyContent = (
       <div className="flex flex-col gap-8">
         <Heading
-          title="Add a photo of your place"
-          subtitle="Show guests what your place looks like!"
+          title="Add a photo of your product"
+          subtitle="Show others what your product looks like!"
         />
         <ImageUpload
           onChange={(value) => setCustomValue('imageSrc', value)}
@@ -225,7 +225,7 @@ const RentModal = () => {
     bodyContent = (
       <div className="flex flex-col gap-8">
         <Heading
-          title="How would you describe your place?"
+          title="How would you describe your product?"
           subtitle="Short and sweet works best!"
         />
         <Input
@@ -241,6 +241,7 @@ const RentModal = () => {
           // placeholder="Add contact information"
           id="description"
           label="Description"
+          placeholder="Add the specifications of your profuct , were you cna meet and your contact details"
           disabled={isLoading}
           register={register}
           errors={errors}
@@ -255,7 +256,7 @@ const RentModal = () => {
       <div className="flex flex-col gap-8">
         <Heading
           title="Now, set your price"
-          subtitle="How much do you charge per night?"
+          subtitle="How much do you want to charge for your product?"
         />
         <Input
           id="price"

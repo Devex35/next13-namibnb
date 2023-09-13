@@ -108,10 +108,10 @@ const UserMenu: React.FC<UserMenuProps> = ({
                   label="Home"
                   onClick={() => router.push('/')}
                 />
-                <MenuItem 
+                {/* <MenuItem 
                   label="My trips" 
                   onClick={() => router.push('/trips')}
-                />
+                /> */}
                 <MenuItem 
                   label="My favorites" 
                   onClick={() => router.push('/favorites')}
@@ -121,11 +121,11 @@ const UserMenu: React.FC<UserMenuProps> = ({
                   onClick={() => router.push('/reservations')}
                 /> */}
                 <MenuItem 
-                  label="My properties" 
+                  label="My products" 
                   onClick={() => router.push('/properties')}
                 />
                 <MenuItem 
-                  label="Make you place a bnb" 
+                  label="Post yout product" 
                   onClick={rentModal.onOpen}
                 />
                 <hr />
@@ -137,6 +137,10 @@ const UserMenu: React.FC<UserMenuProps> = ({
               </>
             ) : (
               <>
+              <MenuItem
+                  label="Home"
+                  onClick={() => router.push('/')}
+                />
                 <MenuItem 
                   label="Login" 
                   onClick={loginModal.onOpen}

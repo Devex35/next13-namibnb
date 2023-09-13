@@ -45,7 +45,7 @@ export const categories = [
   {
     label: 'Laptops',
     icon: GiLaptop,
-    description: 'Phones for sale in namibia',
+    description: 'Laptops for sale in namibia',
   },
   {
     label: 'Furniture',
