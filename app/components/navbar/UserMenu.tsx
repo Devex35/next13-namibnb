@@ -60,7 +60,7 @@ const UserMenu: React.FC<UserMenuProps> = ({
             cursor-pointer
           "
         >
-          Make your place a bnb
+          Post your product
         </div>
         <div 
         onClick={toggleOpen}
